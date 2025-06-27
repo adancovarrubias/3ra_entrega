@@ -1,0 +1,74 @@
+// _cards.scss - Estilos para las tarjetas corporativas
+@use 'sass:color';
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+// Estilos base para las tarjetas
+.card {
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    background: $secondary-color;
+    padding: $card-padding;
+    height: 100%;
+    @include flex-column;
+    text-align: center;
+    @include card-hover;
+
+    // Cuerpo de la tarjeta
+    .card-body {
+        padding: 0;
+        @include flex-column;
+        flex: 1;
+    }
+
+    // Iconos de las tarjetas
+    .fas {
+        font-size: $spacing-xl;
+        color: $primary-color;
+        margin-bottom: $spacing-md;
+    }
+
+    // Títulos de las tarjetas
+    .card-title {
+        font-size: $spacing-md;
+        font-weight: 600;
+        color: $title-color;
+        margin-bottom: $spacing-sm;
+        font-family: $font-primary;
+    }
+
+    // Texto descriptivo
+    .card-text {
+        font-size: 1rem;
+        color: $text-color;
+        margin-bottom: $spacing-lg;
+        line-height: 1.5;
+        flex-grow: 1;
+    }
+
+    // Botón principal
+    .btn {
+        @include button-base;
+        background-color: $primary-color;
+        color: $secondary-color;
+        margin-top: auto;
+
+        &:hover {
+            background-color: color.adjust($primary-color, $lightness: -10%);
+            color: $secondary-color;
+        }
+    }
+}
+
+// Sección ADN Corporativo
+.adn-corporativo {
+    background: $secondary-color;
+    padding: $spacing-xl 0;
+
+    h2 {
+        color: $title-color;
+        font-size: $spacing-lg;
+        font-weight: 600;
+        margin-bottom: $spacing-xl;
+    }
+}

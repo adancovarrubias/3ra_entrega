@@ -1,0 +1,12 @@
+// _base.scss
+@use '../base/variables' as *;
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: $secondary-color;
+  color: #222;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}

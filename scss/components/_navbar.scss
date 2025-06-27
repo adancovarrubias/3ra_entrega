@@ -1,0 +1,20 @@
+// _navbar.scss
+@use 'sass:color';
+@use '../base/variables' as *;
+
+.navbar {
+  background-color: $primary-color;
+  .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .nav-link {
+    color: $secondary-color;
+    font-weight: 500;
+    &:hover,
+    &.active {
+      color: color.adjust($secondary-color, $lightness: 20%);
+      text-decoration: underline;
+    }
+  }
+}

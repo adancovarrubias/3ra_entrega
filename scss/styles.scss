@@ -1,0 +1,11 @@
+// styles.scss
+// Archivo principal que importa todos los parciales organizados en carpetas base y components
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+@use 'base/base' as *;
+@use 'components/navbar' as *;
+@use 'components/buttons' as *;
+@use 'components/components' as *;
+@use 'components/layout' as *;
+@use 'components/cards' as *;
+// Puedes agregar más parciales según crezca tu proyecto

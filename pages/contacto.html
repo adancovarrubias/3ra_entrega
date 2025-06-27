@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - BaseCamp Finance</title>
+    <!-- todo: actualizar cdn de bootstrap cuando salga 5.3.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel='stylesheet' href='styles.sass.css'>
+</head>
+<body>
+    <!-- Header con nav -->
+    <header class="bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">BaseCamp Finance</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quienes_somos.html">¿Quiénes Somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que_hacemos.html">¿Qué Hacemos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="por_que_lo_hacemos.html">¿Por qué lo hacemos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+        <section class="hero-intro py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 mb-4 titulo-principal">¿Hablamos?</h1>
+                        <p class="lead mb-4">¿Necesitas ayuda con tus <strong>finanzas empresariales</strong>? Cuéntanos un poco sobre tu proyecto.</p>
+                        <div class="mision-box p-4 rounded-3 mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-handshake text-primary me-3" style="font-size: 1.5rem;"></i>
+                                <h4 class="mb-0 text-primary">Nuestro Compromiso</h4>
+                            </div>
+                            <p class="mb-0">Te acompañamos desde el primer día hasta alcanzar tus objetivos financieros.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="img-montana-wrapper position-relative">
+                            <img src="../images/contacto.svg" alt="Contacto empresarial" class="img-fluid rounded-4 shadow img-montana-fadein">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="contacto-info-form" class="mb-5">
+            <div class="contacto-wrapper my-5">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center contact-card-side p-4">
+                        <ul class="contact-list text-center mb-0">
+                            <li class="mb-3">
+                                <i class="fas fa-envelope fa-2x mb-2"></i><br>
+                                <a href="mailto:contacto@basecampfinance.com" style="color:#003399; text-decoration:underline;">contacto@basecampfinance.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone fa-2x mb-2"></i><br>
+                                <span style="color:#003399;">+52 123 456 7890</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 d-none d-lg-flex align-items-center justify-content-center">
+                        <div class="contact-divider-vertical"></div>
+                    </div>
+                    <div class="col-lg-7 p-4 bg-white d-flex align-items-center">
+                        <form action="#" method="POST" id="contactForm" class="w-100">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre completo:</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="empresa" class="form-label">Empresa:</label>
+                                    <input type="text" class="form-control" id="empresa" name="empresa" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="telefono" class="form-label">Teléfono:</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="servicio" class="form-label">¿Qué te interesa?</label>
+                                <select class="form-select" id="servicio" name="servicio" required>
+                                    <option value="">Elige una opción</option>
+                                    <option value="divisas">Cobertura de divisas</option>
+                                    <option value="riesgos">Gestión de riesgos</option>
+                                    <option value="commodities">Commodities</option>
+                                    <option value="asesoria">Asesoría general</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Tu mensaje:</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos más sobre tu proyecto..."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="redes-sociales mb-3">
+                        <a href="https://facebook.com/basecampfinance" class="mx-2" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com/basecampfinance" class="mx-2" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/basecampfinance" class="mx-2" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com/basecampfinance" class="mx-2" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                    <p class="mb-0">© 2025 BaseCamp Finance. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

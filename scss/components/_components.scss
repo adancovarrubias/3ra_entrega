@@ -1,0 +1,62 @@
+// _components.scss
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+// Componentes generales
+@use '../base/variables' as *;
+
+// Separador con ícono
+.separador-hero {
+    position: relative;
+    padding: $spacing-md 0;
+    margin: $spacing-lg 0;
+    
+    i {
+        color: $primary-color;
+        background: $secondary-color;
+        padding: 0 $spacing-md;
+        position: relative;
+        z-index: 1;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: rgba($primary-color, 0.1);
+        z-index: 0;
+    }
+}
+
+.header-hero {
+  background: linear-gradient(rgba($primary-color,0.85),rgba($primary-color,0.85)), url('../images/header-bg.jpg') center/cover no-repeat;
+  color: $secondary-color;
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.header-hero--small {
+  height: $header-height;
+}
+.header-hero__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  line-height: 1.1;
+}
+.header-hero__subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+.footer-hero {
+  background: linear-gradient(rgba($primary-color,0.85),rgba($primary-color,0.85));
+  width: 100%;
+}
+.footer-hero--small {
+  height: $header-height;
+}
