@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Archivos principales
+Allow: /index.html
+Allow: /pages/
+Allow: /css/
+Allow: /images/
+
+# Sitemaps
+Sitemap: https://basecampfinance.com/sitemap.xml
+
+# Política de rastreo para motores de búsqueda
+Crawl-delay: 1
